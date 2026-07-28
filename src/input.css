@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+ --color-primary:#6D5A5A;
+ --font-montserrat:"Montserrat";
+ --font-PlayfairDisplay:"Playfair Display";
+ --color-muted:#8A4853;
+}
+@layer {
+    body{
+        font-family: var(--font-montserrat);
+    }
+}
+@utility row{
+    @apply flex items-center;
+}
