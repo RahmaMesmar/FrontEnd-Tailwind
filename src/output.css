@@ -274,6 +274,9 @@
   .ml-1\.5 {
     margin-left: calc(var(--spacing) * 1.5);
   }
+  .ml-auto {
+    margin-left: auto;
+  }
   .row {
     display: flex;
     align-items: center;
@@ -499,6 +502,9 @@
   .text-center {
     text-align: center;
   }
+  .text-right {
+    text-align: right;
+  }
   .align-middle {
     vertical-align: middle;
   }
@@ -518,6 +524,15 @@
   }
   .text-\[12px\] {
     font-size: 12px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
   }
   .text-\[22px\] {
     font-size: 22px;
@@ -631,19 +646,36 @@
     .max-md\:hidden {
       display: none;
     }
+    .max-md\:grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
     .max-md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .max-md\:py-2 {
       padding-block: calc(var(--spacing) * 2);
     }
+    .max-md\:text-right {
+      text-align: right;
+    }
+  }
+  @media (width >= 40rem) {
+    .sm\:flex {
+      display: flex;
+    }
   }
   @media (width >= 48rem) {
+    .md\:flex {
+      display: flex;
+    }
     .md\:grid {
       display: grid;
     }
     .md\:grid-cols-1 {
       grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .md\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
