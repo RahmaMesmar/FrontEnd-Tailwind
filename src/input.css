@@ -5,6 +5,7 @@
  --font-montserrat:"Montserrat";
  --font-PlayfairDisplay:"Playfair Display";
  --color-muted:#8A4853;
+ --font-DMSanse:"DM Sans"
 }
 @layer {
     body{
