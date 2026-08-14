@@ -268,6 +268,12 @@
   .z-50 {
     z-index: 50;
   }
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
   .my-container {
     width: 100%;
     @media (width >= 40rem) {
@@ -1399,12 +1405,21 @@
     }
   }
   @media (width >= 48rem) {
+    .md\:order-1 {
+      order: 1;
+    }
+    .md\:order-2 {
+      order: 2;
+    }
     .md\:row {
       display: flex;
       align-items: center;
     }
     .md\:block {
       display: block;
+    }
+    .md\:flex {
+      display: flex;
     }
     .md\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1415,11 +1430,17 @@
     .md\:grid-cols-\[1\.4fr_0\.6fr\] {
       grid-template-columns: 1.4fr 0.6fr;
     }
+    .md\:grid-cols-\[1fr_3fr\] {
+      grid-template-columns: 1fr 3fr;
+    }
     .md\:grid-cols-\[2fr_1\.4fr\] {
       grid-template-columns: 2fr 1.4fr;
     }
     .md\:grid-cols-\[3fr_1fr\] {
       grid-template-columns: 3fr 1fr;
+    }
+    .md\:flex-col {
+      flex-direction: column;
     }
     .md\:flex-row {
       flex-direction: row;

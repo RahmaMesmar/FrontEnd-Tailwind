@@ -6,187 +6,438 @@
     <!----google font montserrat--->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!--google font Playfair Display -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,100..900&display=swap" rel="stylesheet">
     <link href="./src/output.css" rel="stylesheet">
     <title>Glow Store</title>
 </head>
+
 <body>
+
 <header class="fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-md">
+
    <div class="my-container py-6 max-md:py-2 row justify-between">
+
    <div>
-    <a href="index.html" class="text-muted font-PlayfairDisplay  font-bold text-5xl md:text-7xl">Glow Store</a>
-   </div> 
+    <a href="index.html" class="text-muted font-PlayfairDisplay font-bold text-5xl md:text-7xl">
+        Glow Store
+    </a>
+   </div>
 
    <nav>
     <ul class="row gap-8 text-primary font-montserrat text-xs font-semibold max-lg:hidden">
-        <li class="hover:text-[#8A4853] hover:underline hover:underline-offset-8" ><a href="#">Makeup</a></li>
-        <li  class="hover:text-[#8A4853] hover:underline hover:underline-offset-8" ><a href="#">Womens's Accessories</a></li>
-        <li class="hover:text-[#8A4853] hover:underline hover:underline-offset-8"><a href="#">Men's Accessories</a></li>
-        <li class="hover:text-[#8A4853] hover:underline hover:underline-offset-8"><a href="#">About</a></li>
+
+        <li class="hover:text-[#8A4853] hover:underline hover:underline-offset-8">
+            <a href="#">Makeup</a>
+        </li>
+
+        <li class="hover:text-[#8A4853] hover:underline hover:underline-offset-8">
+            <a href="#">Womens's Accessories</a>
+        </li>
+
+        <li class="hover:text-[#8A4853] hover:underline hover:underline-offset-8">
+            <a href="#">Men's Accessories</a>
+        </li>
+
+        <li class="hover:text-[#8A4853] hover:underline hover:underline-offset-8">
+            <a href="#">About</a>
+        </li>
+
     </ul>
    </nav>
+
    <div>
+
     <ul class="row gap-4 py-9.25">
-        <li><a href="#"><img src="./assets/icons/heart.svg"></a></li>
-        <li><a href="#"><img src="./assets/icons/shopping.svg"></a></li>
-        <li><a href="#"><img src="./assets/icons/profile.svg"></a></li>
+
+        <li>
+            <a href="#">
+                <img src="./assets/icons/heart.svg">
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="./assets/icons/shopping.svg">
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="./assets/icons/profile.svg">
+            </a>
+        </li>
+
     </ul>
+
     <ul>
         <li></li>
     </ul>
-   </div>
-   </div>
-</header>
-<section class="bg-[#F6F3F2] ">
-    <div class=" my-container grid grid-cols-[1fr_3fr] gap-8 justify-between">
-        <div class=" pt-35  max-md:hidden">
-        <div class="row justify-between py-2">
-        <h3 class="font-PlayfairDisplay text-muted">Filters</h3>
-        <h6 class="font-montserrat font-semibold text-primary">Clear All</h6>
-        </div>
-        <div>
-        <h6 class="font-montserrat font-semibold">
-            Category
-        </h6>
-        <div class="flex flex-col gap-2 font-montserrat accent-muted text-[#1B1C1C]">
-        <label>
-     <input type="checkbox">
-         Face
-        </label>
-       <label>
-        <input type="checkbox">
-        Eyes
-       </label>
-        <label>
-       <input type="checkbox">
-         Lips
-        </label>
-        </div>
-        </div>
-        <div class="py-2">
-            <h6 class="font-montserrat font-semibold">Price Range</h6>
-            <div class="w-70 ">
-             <input 
-             type="range"
-             min="0"
-             max="200"
-             class="w-full accent-muted h-1.5"
-             >
-            </div>
-            <div class="flex justify-between ">
-                <span class="text-primary font-semibold">&0</span>
-                <span class="text-primary font-semibold">&200+</span>
-            </div>
-          <div class="py-2">
-            <h6 class="font-montserrat font-semibold">Shades</h6>
-      <div class="flex gap-1 items-center">
 
-    <div class="w-9 h-9 rounded-full border-2 border-transparent hover:border-[#8A4853] flex items-center justify-center transition cursor-pointer">
-        <div class="w-7 h-7 rounded-full bg-[#F8DDCE]"></div>
-    </div>
-    <div class="w-9 h-9 rounded-full border-2 border-transparent hover:border-[#8A4853] flex items-center justify-center transition cursor-pointer">
-        <div class="w-7 h-7 rounded-full bg-[#E8B594]"></div>
-    </div>
-    <div class="w-9 h-9 rounded-full border-2 border-transparent hover:border-[#8A4853] flex items-center justify-center transition cursor-pointer">
-        <div class="w-7 h-7 rounded-full bg-[#C99072]"></div>
-    </div>
-    <div class="w-9 h-9 rounded-full border-2 border-transparent hover:border-[#8A4853] flex items-center justify-center transition cursor-pointer">
-        <div class="w-7 h-7 rounded-full bg-[#A66E53]"></div>
-    </div>
-    <div class="w-9 h-9 rounded-full border-2 border-transparent hover:border-[#8A4853] flex items-center justify-center transition cursor-pointer">
-        <div class="w-7 h-7 rounded-full bg-[#5B3625]"></div>
-    </div>
-</div>
-     <div class="bg-[#F7DCDC4D] mt-4 p-5 rounded-2xl">
-        <h5 class="font-montserrat text-[#524345]">Discover your perfect shade<br>
-         with our virtual try-on.
-        </h5>
-     </div>
-          </div>
-        </div>
-        </div>
-    <div class="pt-35 w-full">
-        <div class="flex gap-1.5">
-            <a href="#">Home</a>
-            <h5>/</h5>
-              <a href="#">Makeup</a>
-              <h5>/</h5>
-                <a href="#">Face</a>
-        </div>
-        <div>
-            <h2 class="text-muted font-PlayfairDisplay">Face Makeup</h2>
-            <h5 class="text-primary">Showing 1-12 of 48 products</h5>
-            <div class="grid grid-cols-2 w-full md:grid-cols-3 gap-5 ">
-                <div class="w-full">
-                <img src="./assets/makeupcollection/foundation.png" class="rounded-2xl "/>
-                <h5>Luminous Silk Foundation</h5>
-                <h6  class="font-montserrat text-primary">Glow Beauty</h6>
-                <div class="flex justify-between">
-                <h5  class="font-PlayfairDisplay text-muted">$48</h5>
-                 <a class href="#"><img src="./assets/icons/plus.svg"></a>
-                </div>
-                </div>
-                <div class="w-full">
-                    <img src="./assets/makeupcollection/baodar.png" class="rounded-2xl w-full"/>
-                    <h5>Flawless Setting Powder</h5>
-                    <h6 class="font-montserrat text-primary">Aura Cosmetics</h6>
-                    <div  class="flex justify-between">
-                    <h5  class="font-PlayfairDisplay text-muted">$32</h5>
-                    <a class href="#"><img src="./assets/icons/plus.svg"></a>
-                    </div>
-                </div>
-                <div class="w-full">
-                    <img src="./assets/makeupcollection/rooj2.png" class="rounded-2xl w-full"/>
-                    <h5>Radiant Cream Blush</h5>
-                    <h6 class="font-montserrat text-primary">Glow Beauty</h6>
-                     <div class="flex justify-between">
-                    <h5 class="font-PlayfairDisplay text-muted">$28</h5>
-                     <a class href="#"><img src="./assets/icons/plus.svg"></a>
-                    </div>
-                </div>
-               <div class="w-full">
-                <img src="./assets/makeupcollection/foundation2.png" class="rounded-2xl w-full"/>
-                <h5>Perfecting Concealer</h5>
-              
-                <h6 class="font-montserrat text-primary">Lumière</h6>
-                  <div class="flex justify-between">
-                <h5 class="font-PlayfairDisplay text-muted">$24</h5>
-                 <a class href="#"><img src="./assets/icons/plus.svg"></a>
-                </div>
-            </div> 
+   </div>
+
+   </div>
+
+</header>
+
+
+<section class="bg-[#F6F3F2]">
+
+    <div class="my-container grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-8 justify-between">
+
+        <div class="pt-35 max-md:hidden">
+
+            <div class="row justify-between py-2">
+
+                <h3 class="font-PlayfairDisplay text-muted">
+                    Filters
+                </h3>
+
+                <h6 class="font-montserrat font-semibold text-primary">
+                    Clear All
+                </h6>
+
             </div>
+
+            <div>
+
+                <h6 class="font-montserrat font-semibold">
+                    Category
+                </h6>
+
+                <div class="flex flex-col gap-2 font-montserrat accent-muted text-[#1B1C1C]">
+
+                    <label>
+                        <input type="checkbox">
+                        Face
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Eyes
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Lips
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="py-2">
+
+                <h6 class="font-montserrat font-semibold">
+                    Price Range
+                </h6>
+
+                <div class="w-70">
+
+                    <input
+                        type="range"
+                        min="0"
+                        max="200"
+                        class="w-full accent-muted h-1.5"
+                    >
+
+                </div>
+
+                <div class="flex justify-between">
+
+                    <span class="text-primary font-semibold">
+                        &0
+                    </span>
+
+                    <span class="text-primary font-semibold">
+                        &200+
+                    </span>
+
+                </div>
+
+
+                <div class="py-2">
+
+                    <h6 class="font-montserrat font-semibold">
+                        Shades
+                    </h6>
+
+                    <div class="flex gap-1 items-center">
+
+                        <div class="w-9 h-9 rounded-full border-2 border-transparent hover:border-[#8A4853] flex items-center justify-center transition cursor-pointer">
+                            <div class="w-7 h-7 rounded-full bg-[#F8DDCE]"></div>
+                        </div>
+
+                        <div class="w-9 h-9 rounded-full border-2 border-transparent hover:border-[#8A4853] flex items-center justify-center transition cursor-pointer">
+                            <div class="w-7 h-7 rounded-full bg-[#E8B594]"></div>
+                        </div>
+
+                        <div class="w-9 h-9 rounded-full border-2 border-transparent hover:border-[#8A4853] flex items-center justify-center transition cursor-pointer">
+                            <div class="w-7 h-7 rounded-full bg-[#C99072]"></div>
+                        </div>
+
+                        <div class="w-9 h-9 rounded-full border-2 border-transparent hover:border-[#8A4853] flex items-center justify-center transition cursor-pointer">
+                            <div class="w-7 h-7 rounded-full bg-[#A66E53]"></div>
+                        </div>
+
+                        <div class="w-9 h-9 rounded-full border-2 border-transparent hover:border-[#8A4853] flex items-center justify-center transition cursor-pointer">
+                            <div class="w-7 h-7 rounded-full bg-[#5B3625]"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bg-[#F7DCDC4D] mt-4 p-5 rounded-2xl">
+
+                        <h5 class="font-montserrat text-[#524345]">
+                            Discover your perfect shade<br>
+                            with our virtual try-on.
+                        </h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+
+
+        <div class="pt-35 w-full">
+
+            <div class="flex gap-1.5">
+
+                <a href="#">Home</a>
+
+                <h5>/</h5>
+
+                <a href="#">Makeup</a>
+
+                <h5>/</h5>
+
+                <a href="#">Face</a>
+
+            </div>
+
+
+            <div>
+
+                <h2 class="text-muted font-PlayfairDisplay">
+                    Face Makeup
+                </h2>
+
+                <h5 class="text-primary">
+                    Showing 1-12 of 48 products
+                </h5>
+
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
+                    <div class="w-full">
+
+                        <img src="./assets/makeupcollection/foundation.png" class="rounded-2xl"/>
+
+                        <h5>
+                            Luminous Silk Foundation
+                        </h5>
+
+                        <h6 class="font-montserrat text-primary">
+                            Glow Beauty
+                        </h6>
+
+                        <div class="flex justify-between">
+
+                            <h5 class="font-PlayfairDisplay text-muted">
+                                $48
+                            </h5>
+
+                            <a href="#">
+                                <img src="./assets/icons/plus.svg">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="w-full">
+
+                        <img src="./assets/makeupcollection/baodar.png" class="rounded-2xl w-full"/>
+
+                        <h5>
+                            Flawless Setting Powder
+                        </h5>
+
+                        <h6 class="font-montserrat text-primary">
+                            Aura Cosmetics
+                        </h6>
+
+                        <div class="flex justify-between">
+
+                            <h5 class="font-PlayfairDisplay text-muted">
+                                $32
+                            </h5>
+
+                            <a href="#">
+                                <img src="./assets/icons/plus.svg">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="w-full">
+
+                        <img src="./assets/makeupcollection/rooj2.png" class="rounded-2xl w-full"/>
+
+                        <h5>
+                            Radiant Cream Blush
+                        </h5>
+
+                        <h6 class="font-montserrat text-primary">
+                            Glow Beauty
+                        </h6>
+
+                        <div class="flex justify-between">
+
+                            <h5 class="font-PlayfairDisplay text-muted">
+                                $28
+                            </h5>
+
+                            <a href="#">
+                                <img src="./assets/icons/plus.svg">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="w-full">
+
+                        <img src="./assets/makeupcollection/foundation2.png" class="rounded-2xl w-full"/>
+
+                        <h5>
+                            Perfecting Concealer
+                        </h5>
+
+                        <h6 class="font-montserrat text-primary">
+                            Lumière
+                        </h6>
+
+                        <div class="flex justify-between">
+
+                            <h5 class="font-PlayfairDisplay text-muted">
+                                $24
+                            </h5>
+
+                            <a href="#">
+                                <img src="./assets/icons/plus.svg">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-    </div>
+
 </section>
+
+
 <section class="pt-10 bg-[#F6F3F2]">
-   <div class="rounded-3xl bg-muted font-montserrat  mx-auto w-59 text-amber-50 font-montserrat text-center p-2 "><h5>Load More Products</h5></div> 
+
+   <div class="rounded-3xl bg-muted font-montserrat mx-auto w-59 text-amber-50 text-center p-2">
+
+        <h5>
+            Load More Products
+        </h5>
+
+   </div>
+
 </section>
-<footer class=" bg-[#F6F3F2] p-4 ">
-    <div class="my-container flex justify-between gap-3">
-    <div class="p-4"><h2 class="font-PlayfairDisplay text-muted">Glow Store</h2>
-        <h5 class="font-montserrat text-primary p-4">© 2024 Glow Store. All rights<br>
-        reserved</h5></div>
-    <div class="p-2" >
-     <h6 class="text-muted font-semibold p-2">Quick Links</h6>
-     <h5 class="text-primary p-2">About Us</h5>
-     <h5 class="text-primary p-2">Store Locator</h5>
+
+
+<footer class="bg-[#F6F3F2] p-4">
+
+    <div class="my-container flex flex-col md:flex-row justify-between gap-3">
+
+        <div class="p-4">
+
+            <h2 class="font-PlayfairDisplay text-muted">
+                Glow Store
+            </h2>
+
+            <h5 class="font-montserrat text-primary p-4">
+                © 2024 Glow Store. All rights<br>
+                reserved
+            </h5>
+
+        </div>
+
+
+        <div class="p-2">
+
+            <h6 class="text-muted font-semibold p-2">
+                Quick Links
+            </h6>
+
+            <h5 class="text-primary p-2">
+                About Us
+            </h5>
+
+            <h5 class="text-primary p-2">
+                Store Locator
+            </h5>
+
+        </div>
+
+
+        <div class="p-2">
+
+            <h6 class="text-muted font-semibold p-2">
+                Category Links
+            </h6>
+
+            <h5 class="text-primary p-2">
+                Makeup
+            </h5>
+
+            <h5 class="text-primary p-2">
+                Skincare
+            </h5>
+
+        </div>
+
+
+        <div class="p-2">
+
+            <h6 class="text-muted font-semibold p-2">
+                Customer Service
+            </h6>
+
+            <h5 class="text-primary p-2">
+                Contact Us
+            </h5>
+
+            <h5 class="text-primary p-2">
+                Shipping & Returns
+            </h5>
+
+        </div>
+
     </div>
-    <div class="p-2">
-        <h6 class="text-muted font-semibold p-2" ">Category Links</h6>
-        <h5 class="text-primary p-2">Makeup</h5>
-        <h5 class="text-primary  p-2">Skincare</h5>
-    </div>
-    <div class="p-2">
-        <h6 class="text-muted font-semibold  p-2">Customer Service</h6>
-        <h5 class="text-primary p-2 ">Contact Us</h5>
-        <h5 class="text-primary  p-2">Shipping & Returns</h5>
-    </div>
-    </div>
+
 </footer>
+
 </body>
 </html>
