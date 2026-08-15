@@ -302,6 +302,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-1 {
+    margin-block: var(--spacing);
+  }
   .my-2 {
     margin-block: calc(var(--spacing) * 2);
   }
@@ -322,6 +325,9 @@
   }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
+  }
+  .my-20 {
+    margin-block: calc(var(--spacing) * 20);
   }
   .my-\[40px\] {
     margin-block: 40px;
@@ -519,6 +525,9 @@
   .w-85 {
     width: calc(var(--spacing) * 85);
   }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
   .w-230 {
     width: calc(var(--spacing) * 230);
   }
@@ -650,6 +659,12 @@
   }
   .gap-14 {
     gap: calc(var(--spacing) * 14);
+  }
+  .gap-15 {
+    gap: calc(var(--spacing) * 15);
+  }
+  .gap-19 {
+    gap: calc(var(--spacing) * 19);
   }
   .gap-27 {
     gap: calc(var(--spacing) * 27);
