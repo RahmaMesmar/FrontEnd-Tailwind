@@ -38,6 +38,7 @@
     --text-6xl--line-height: 1;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
+    --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -326,11 +327,20 @@
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
+  .my-16 {
+    margin-block: calc(var(--spacing) * 16);
+  }
   .my-20 {
     margin-block: calc(var(--spacing) * 20);
   }
   .my-\[40px\] {
     margin-block: 40px;
+  }
+  .my-\[64\] {
+    margin-block: 64;
+  }
+  .my-\[64px\] {
+    margin-block: 64px;
   }
   .mt-1 {
     margin-top: var(--spacing);
@@ -453,6 +463,9 @@
   .h-9 {
     height: calc(var(--spacing) * 9);
   }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
   .h-28 {
     height: calc(var(--spacing) * 28);
   }
@@ -506,6 +519,9 @@
   }
   .w-9 {
     width: calc(var(--spacing) * 9);
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
   }
   .w-24 {
     width: calc(var(--spacing) * 24);
@@ -742,6 +758,9 @@
   .border-\[\#914C59\] {
     border-color: #914C59;
   }
+  .border-\[\#944B5A\] {
+    border-color: #944B5A;
+  }
   .border-\[\#D7C1C3\] {
     border-color: #D7C1C3;
   }
@@ -753,6 +772,9 @@
   }
   .border-\[\#D9B9BE\] {
     border-color: #D9B9BE;
+  }
+  .border-\[\#E5C9CD\] {
+    border-color: #E5C9CD;
   }
   .border-\[\#E5E0DE\] {
     border-color: #E5E0DE;
@@ -1153,6 +1175,10 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -1225,6 +1251,9 @@
   }
   .text-\[\#934C59\] {
     color: #934C59;
+  }
+  .text-\[\#944B5A\] {
+    color: #944B5A;
   }
   .text-\[\#994d5b\] {
     color: #994d5b;
@@ -1363,6 +1392,9 @@
     }
   }
   @media (width < 48rem) {
+    .max-md\:flex {
+      display: flex;
+    }
     .max-md\:hidden {
       display: none;
     }
@@ -1424,6 +1456,9 @@
     }
     .md\:flex-row {
       flex-direction: row;
+    }
+    .md\:justify-center {
+      justify-content: center;
     }
     .md\:justify-end {
       justify-content: flex-end;
