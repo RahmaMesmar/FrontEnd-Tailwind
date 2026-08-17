@@ -299,6 +299,9 @@
   .m-3 {
     margin: calc(var(--spacing) * 3);
   }
+  .m-7 {
+    margin: calc(var(--spacing) * 7);
+  }
   .m-8 {
     margin: calc(var(--spacing) * 8);
   }
@@ -391,6 +394,9 @@
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
+  }
+  .mb-9 {
+    margin-bottom: calc(var(--spacing) * 9);
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
@@ -1248,6 +1254,12 @@
   .accent-muted {
     accent-color: var(--color-muted);
   }
+  .opacity-75 {
+    opacity: 75%;
+  }
+  .opacity-80 {
+    opacity: 80%;
+  }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1315,6 +1327,12 @@
       --tw-scale-z: 105%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
+    .hover\:scale-1051:hover {
+      --tw-scale-x: 1051%;
+      --tw-scale-y: 1051%;
+      --tw-scale-z: 1051%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
     .hover\:border-\[\#8A4853\]:hover {
       border-color: #8A4853;
     }
@@ -1347,6 +1365,12 @@
     }
     .hover\:underline-offset-8:hover {
       text-underline-offset: 8px;
+    }
+    .hover\:opacity-70:hover {
+      opacity: 70%;
+    }
+    .hover\:opacity-100:hover {
+      opacity: 100%;
     }
     .hover\:shadow:hover {
       --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
